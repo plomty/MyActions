@@ -135,6 +135,14 @@
 0 12 */3 * * node /scripts/jd_priceProtect.js >> /scripts/logs/jd_priceProtect.log 2>&1
 # 星系牧场
 30 7 * * * node /scripts/jd_qqxing.js >>  /scripts/logs/jd_qqxing.log 2>&1
+# 京东到家果园水车 自动领取果园水车水滴
+5 */2 * * * node /scripts/jddj_fruit_collectWater.js >> /scripts/logs/jddj_fruit_collectWater.log 2>&1
+# 京东到家鲜豆任务 自动完成鲜豆任务
+0 8 * * * node /scripts/jddj_bean.js >> /scripts/logs/jddj_bean.log 2>&1
+# 京东到家鲜豆庄园 自动完成庄园任务自动浇水
+0 9 * * * node /scripts/jddj_plantBeans.js >> /scripts/logs/jddj_plantBeans.log 2>&1
+# 鲜豆庄园领水滴 定时领取庄园水滴
+0-25/5 0 * * * node /scripts/jddj_getPoints.js >> /scripts/logs/jddj_getPoints.log 2>&1
 
 ##############默认注释活动##############
 # 京东试用（默认注释，请配合取关脚本使用）
