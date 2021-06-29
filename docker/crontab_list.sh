@@ -128,7 +128,17 @@
 # 保价
 0 12 */3 * * node /scripts/jd_priceProtect.js >> /scripts/logs/jd_priceProtect.log 2>&1
 # 星系牧场
-30 7 * * * node /scripts/jd_qqxing.js >>  /scripts/logs/jd_qqxing.log 2>&1
+30 7 * * * node /scripts/jd_qqxing.js >> /scripts/logs/jd_qqxing.log 2>&1
+# 狂欢欧洲杯
+30 7 * * * node /scripts/jd_europeancup.js >> /scripts/logs/jd_europeancup.log 2>&1
+# 特物Z|万物皆可国创
+30 11 * * * node /scripts/jd_superBrand.js  >> /scripts/logs/jd_superBrand.log 2>&1
+# 京东金融
+0 12 * * * node /scripts/jr_sign.js >> /scripts/logs/jr_sign.log 2>&1
+# 宠汪汪二代目
+0 6 * * * node /scripts/jd_joy_new.js >> /scripts/logs/jd_joy_new.log 2>&1
+# 宠汪汪兑换二代目
+0 6 * * * node /scripts/jd_joy_reward_new.js >> /scripts/logs/jd_joy_reward_new.log 2>&1
 # 京东到家果园水车 自动领取果园水车水滴
 5 */2 * * * node /scripts/jd_dj_fruit_collectWater.js >> /scripts/logs/jddj_fruit_collectWater.log 2>&1
 # 京东到家鲜豆任务 自动完成鲜豆任务
